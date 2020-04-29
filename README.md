@@ -15,7 +15,7 @@ You are a SpaceTrader that travels around the universe to trade items with merch
 + *Engineering*: ability to repair Spaceship
 
 **Win Condition**
-*You can retire (win) when you earn enough money(10000)*
+*You can retire (win) when you earn enough money (10000)*
 
 **Lose Condtition**
 *You lose when the health of the ship reaches 0*
