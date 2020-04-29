@@ -26,5 +26,5 @@ You are a SpaceTrader that travels around the universe to trade items with merch
 - *Michael Oh-Yang*
 - *Josh Jiaxun Chen*
 - *Mohamed Jelloul*
-- *Cullen Bertram *
+- *Cullen Bertram*
 - *Amber Pelham*
