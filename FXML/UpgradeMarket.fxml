@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="756.0" prefWidth="1130.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UpgradeMarketController">
+   <children>
+      <TabPane layoutX="70.0" layoutY="359.0" prefHeight="330.0" prefWidth="400.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Weapons">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="49.0" fitWidth="75.0" layoutX="15.0" layoutY="63.0">
+                           <image>
+                              <Image url="@/pictures/gold2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="73.0" layoutX="16.0" layoutY="129.0">
+                           <image>
+                              <Image url="@/pictures/rare3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="56.0" fitWidth="60.0" layoutX="23.0" layoutY="179.0">
+                           <image>
+                              <Image url="@/pictures/normal2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="61.0" fitWidth="58.0" layoutX="24.0" layoutY="235.0">
+                           <image>
+                              <Image url="@/pictures/normal.png" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="110.0" layoutY="-1.0" prefHeight="304.0" prefWidth="184.0">
+                           <children>
+                              <Label prefHeight="60.0" prefWidth="151.0" text="Golden Repeater" textFill="#831010">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="52.29289245605469" endY="0.2928932309150696" startX="-100.0" />
+                              <Label prefHeight="60.0" prefWidth="153.0" text="Singing Longrifle" textFill="#831010">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="52.29289245605469" startX="-100.0" />
+                              <Label prefHeight="60.0" prefWidth="158.0" text="Solitude's Carbine" textFill="#831010">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="50.29289245605469" endY="-0.6568536758422852" startX="-100.0" />
+                              <Label prefHeight="60.0" prefWidth="155.0" text="Courier Of Misery" textFill="#831010">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="54.29289245605469" endY="0.2928932309150696" startX="-100.0" />
+                              <Label prefHeight="60.0" prefWidth="164.0" text="Suppressor Of Ashes" textFill="#831010">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Button fx:id="goldenRepeater" layoutX="302.0" layoutY="20.0" mnemonicParsing="false" onAction="#proceedToPurchaseGold" text="View" />
+                        <Button fx:id="singingLongrifle" layoutX="302.0" layoutY="75.0" mnemonicParsing="false" onAction="#proceedToPurchaseSing" text="View" />
+                        <Button fx:id="solitudesCarbine" layoutX="302.0" layoutY="139.0" mnemonicParsing="false" onAction="#proceedToPurchaseSol" text="View" />
+                        <Button fx:id="courierOfMisery" layoutX="302.0" layoutY="201.0" mnemonicParsing="false" onAction="#proceedToPurchaseCor" text="View" />
+                        <Button fx:id="suppressorOfAshes" layoutX="302.0" layoutY="262.0" mnemonicParsing="false" onAction="#proceedToPurchaseSupp" text="View" />
+                        <ImageView fitHeight="33.0" fitWidth="101.0" layoutX="2.0" layoutY="16.0">
+                           <image>
+                              <Image url="@/pictures/goldone.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Lost Treasures">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="110.0" layoutY="-1.0" prefHeight="304.0" prefWidth="184.0">
+                           <children>
+                              <Label prefHeight="59.0" prefWidth="164.0" text="The Handsome Vow" textFill="#831010">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="52.29289245605469" endY="0.2928932309150696" startX="-100.0" />
+                              <Label prefHeight="60.0" prefWidth="153.0" text="The Devoted Tear" textFill="#831010">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="52.29289245605469" startX="-100.0" />
+                              <Label prefHeight="60.0" prefWidth="158.0" text="The Serene Trinket" textFill="#831010">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="50.29289245605469" endY="-0.6568536758422852" startX="-100.0" />
+                              <Label prefHeight="60.0" prefWidth="155.0" text="The Lustrous Star" textFill="#831010">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="54.29289245605469" endY="0.2928932309150696" startX="-100.0" />
+                              <Label prefHeight="60.0" prefWidth="164.0" text="The Mystery Bag" textFill="#831010">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Button fx:id="theHandsomeVow" layoutX="302.0" layoutY="20.0" mnemonicParsing="false" onAction="#proceedToPurchaseVow" text="View" />
+                        <Button fx:id="theDevotedTear" layoutX="302.0" layoutY="75.0" mnemonicParsing="false" onAction="#proceedToPurchaseTear" text="View" />
+                        <Button fx:id="theSereneTrinket" layoutX="302.0" layoutY="139.0" mnemonicParsing="false" onAction="#proceedToPurchaseTri" text="View" />
+                        <Button fx:id="theLustrousStar" layoutX="302.0" layoutY="201.0" mnemonicParsing="false" onAction="#proceedToPurchaseStar" text="View" />
+                        <Button fx:id="theMysteryBag" layoutX="302.0" layoutY="262.0" mnemonicParsing="false" onAction="#proceedToPurchaseBag" text="View" />
+                        <ImageView fitHeight="62.0" fitWidth="68.0" layoutX="19.0" layoutY="2.0">
+                           <image>
+                              <Image url="@/pictures/ring.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="64.0" fitWidth="56.0" layoutX="19.0" layoutY="182.0">
+                           <image>
+                              <Image url="@/pictures/necklace2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="64.0" fitWidth="61.0" layoutX="17.0" layoutY="119.0">
+                           <image>
+                              <Image url="@/pictures/necklace.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="66.0" fitWidth="63.0" layoutX="19.0" layoutY="55.0">
+                           <image>
+                              <Image url="@/pictures/ring2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="54.0" fitWidth="61.0" layoutX="23.0" layoutY="248.0">
+                           <image>
+                              <Image url="@/pictures/bag.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <TitledPane animated="false" layoutX="632.0" layoutY="355.0" prefHeight="338.0" prefWidth="400.0" text="Inventory">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView layoutX="-2.0" layoutY="48.0" prefHeight="264.0" prefWidth="400.0" />
+                  <Button layoutX="-1.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="400.0" text="My Items" />
+                  <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="122.0" layoutY="-1.0">
+                     <image>
+                        <Image url="@/pictures/Inventory.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <ImageView layoutX="101.0" layoutY="170.0">
+         <image>
+            <Image url="@/pictures/Charisma.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="101.0" layoutY="283.0">
+         <image>
+            <Image url="@/pictures/Engineering.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="102.0" layoutY="50.0">
+         <image>
+            <Image url="@/pictures/Strength.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="102.0" layoutY="110.0">
+         <image>
+            <Image url="@/pictures/Agility.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="101.0" layoutY="228.0">
+         <image>
+            <Image url="@/pictures/Intelligence.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="918.0" layoutY="27.0">
+         <image>
+            <Image url="@/pictures/Gold.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="173.0" layoutY="58.0" prefHeight="33.0" prefWidth="101.0" text="Strength:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="118.0" prefHeight="33.0" prefWidth="101.0" text="Agility：">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="178.0" prefHeight="33.0" prefWidth="101.0" text="Charisma:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="236.0" prefHeight="33.0" prefWidth="101.0" text="Intelligence:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="291.0" prefHeight="33.0" prefWidth="101.0" text="Engineering:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="972.0" layoutY="35.0" prefHeight="33.0" prefWidth="101.0" text="Gold:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="showStrength" layoutX="284.0" layoutY="59.0" prefHeight="33.0" prefWidth="101.0" text="Strength:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="showAgility" layoutX="284.0" layoutY="118.0" prefHeight="33.0" prefWidth="101.0" text="Strength:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="showCharisma" layoutX="284.0" layoutY="178.0" prefHeight="33.0" prefWidth="101.0" text="Strength:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="510.0" layoutY="701.0" mnemonicParsing="false" onAction="#showGuiStage" prefHeight="48.0" prefWidth="117.0" text="Back" />
+      <Label fx:id="showIntelligence" layoutX="284.0" layoutY="236.0" prefHeight="33.0" prefWidth="101.0" text="Strength:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="showEngineering" layoutX="284.0" layoutY="291.0" prefHeight="33.0" prefWidth="101.0" text="Strength:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="showGold" layoutX="1023.0" layoutY="35.0" prefHeight="33.0" prefWidth="101.0" text="Strength:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="812.0" prefWidth="1084.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SkillConfigurationController">
+   <children>
+      <ImageView fitHeight="812.0" fitWidth="1084.0" layoutX="1.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../pictures/universe.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="288.0" layoutY="51.0" prefHeight="52.0" prefWidth="508.0" text="Let's Set Up Our Game!!!" textFill="RED">
+         <font>
+            <Font name="Bauhaus 93" size="45.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="14.0" layoutY="103.0" prefHeight="646.0" prefWidth="936.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="34.0" prefWidth="233.0" text="Difficulty" textFill="#1100ff" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Bauhaus 93" size="30.0" />
+               </font>
+            </Label>
+            <GridPane GridPane.columnIndex="2">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <CheckBox fx:id="diff1" mnemonicParsing="false" onAction="#handle1box" text="Level 1" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="diff2" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0"
+                            onAction="#handle2box" text="Level 2" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="diff4" mnemonicParsing="false" onAction="#handle4box" text="Level 4" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="diff3" mnemonicParsing="false" onAction="#handle3box" text="Level 3" textFill="#eaeaea" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="diff5" mnemonicParsing="false" onAction="#handle5box" text="Level 5" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </GridPane>
+            <Label alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="240.0" text="Your Name:" textAlignment="RIGHT" textFill="#10dec0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bauhaus 93" size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="charName2" prefHeight="25.0" prefWidth="209.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#toMainStage" prefHeight="25.0" prefWidth="135.0" text="Back" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bauhaus 93" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="bt" alignment="CENTER" mnemonicParsing="false" onAction="#showYourName" prefHeight="25.0" prefWidth="135.0" text="Continue" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bauhaus 93" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

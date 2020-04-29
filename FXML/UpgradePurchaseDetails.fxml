@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PurchaseController">
+   <children>
+      <ImageView fitHeight="403.0" fitWidth="600.0">
+         <image>
+            <Image url="@/pictures/purchaseBackground.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="139.0" layoutY="317.0" mnemonicParsing="false" onAction="#closePurchase" prefHeight="36.0" prefWidth="104.0" text="Back" />
+      <Button layoutX="354.0" layoutY="317.0" mnemonicParsing="false" onAction="#confirmPurchase" prefHeight="36.0" prefWidth="104.0" text="Purchase" />
+      <ImageView fx:id="image" fitHeight="64.0" fitWidth="89.0" layoutX="256.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="140.0" layoutY="261.0" prefHeight="45.0" prefWidth="341.0" text="Confirm Purchasing? (No Refund!)" textFill="#750e0e">
+         <font>
+            <Font name="Broadway" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="185.0" prefHeight="33.0" prefWidth="101.0" text="Strength:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="431.0" layoutY="185.0" prefHeight="33.0" prefWidth="101.0" text="Agility：" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="185.0" prefHeight="33.0" prefWidth="101.0" text="Charisma:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="228.0" prefHeight="33.0" prefWidth="101.0" text="Intelligence:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="228.0" prefHeight="33.0" prefWidth="101.0" text="Engineering:" textFill="#f8f8f8">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="str" layoutX="149.0" layoutY="185.0" prefHeight="33.0" prefWidth="101.0" text="Strength:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="eng" layoutX="179.0" layoutY="228.0" prefHeight="33.0" prefWidth="101.0" text="Strength:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="cha" layoutX="345.0" layoutY="185.0" prefHeight="33.0" prefWidth="101.0" text="Strength:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="agi" layoutX="499.0" layoutY="185.0" prefHeight="33.0" prefWidth="101.0" text="Strength:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="intell" layoutX="362.0" layoutY="228.0" prefHeight="33.0" prefWidth="101.0" text="Strength:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="cost" layoutX="362.0" layoutY="353.0" prefHeight="33.0" prefWidth="101.0" text="Strength:" textFill="#fbff00">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="description" layoutX="161.0" layoutY="140.0" prefHeight="45.0" prefWidth="299.0" />
+      <Label fx:id="name" layoutX="236.0" layoutY="26.0" prefHeight="33.0" prefWidth="151.0" text="Name" textFill="#a42828">
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="554.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MarketController">
+   <children>
+      <Text layoutX="105.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Market!" textAlignment="CENTER" wrappingWidth="297.93670654296875">
+         <font>
+            <Font name="Bauhaus 93" size="32.0" />
+         </font>
+      </Text>
+      <ListView id="Regionlist" layoutX="1.0" layoutY="130.0" prefHeight="426.0" prefWidth="507.0" />
+      <Button layoutX="49.0" layoutY="496.0" mnemonicParsing="false" onAction="#buy" prefHeight="47.0" prefWidth="126.0" text="Buy" />
+      <CheckBox id="check2" fx:id="check2" layoutX="264.0" layoutY="298.0" mnemonicParsing="false" />
+      <CheckBox id="check1" fx:id="check1" layoutX="264.0" layoutY="254.0" mnemonicParsing="false" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="199.0" prefHeight="47.0" prefWidth="94.0" text="Item">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="131.0" prefHeight="47.0" prefWidth="94.0" text="Market">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <CheckBox id="check3" fx:id="check3" layoutX="264.0" layoutY="346.0" mnemonicParsing="false" />
+      <CheckBox id="check4" fx:id="check4" layoutX="264.0" layoutY="389.0" mnemonicParsing="false" />
+      <CheckBox id="check5" fx:id="check5" layoutX="264.0" layoutY="436.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="17.0" />
+      <Button id="sell" layoutX="333.0" layoutY="496.0" mnemonicParsing="false" onAction="#sell" prefHeight="47.0" prefWidth="126.0" text="Sell" />
+      <Text fx:id="marketItem2" layoutX="34.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="56.53668212890625" />
+      <Text fx:id="marketItem3" layoutX="34.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="56.53668212890625" />
+      <Text fx:id="marketItem4" layoutX="34.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="68.5367431640625" />
+      <Text fx:id="marketItem5" layoutX="34.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="68.5367431640625" />
+      <Button id="back" fx:id="backBtn" layoutX="462.0" layoutY="529.0" mnemonicParsing="false" onAction="#openGuiStage" text="Back" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="333.0" layoutY="131.0" prefHeight="47.0" prefWidth="112.0" text="Inventory">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text fx:id="sellPrice1" layoutX="413.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="56.53668212890625" />
+      <Text fx:id="sellPrice2" layoutX="413.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="56.53668212890625" />
+      <Text fx:id="sellPrice3" layoutX="407.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.5367431640625" />
+      <Text fx:id="sellPrice4" layoutX="407.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.5367431640625" />
+      <Text fx:id="sellPrice5" layoutX="407.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.5367431640625" />
+
+      <Text fx:id="buyPrice1" layoutX="112.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.5367431640625" />
+      <Text fx:id="buyPrice2" layoutX="118.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="56.53668212890625" />
+      <Text fx:id="buyPrice3" layoutX="118.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="56.53668212890625" />
+      <Text fx:id="buyPrice4" layoutX="112.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.5367431640625" />
+      <Text fx:id="buyPrice5" layoutX="112.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.5367431640625" />
+      <Label layoutX="4.0" prefHeight="68.0" prefWidth="87.0" text="Gold">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="gold" layoutX="27.0" layoutY="51.0" prefHeight="35.0" prefWidth="41.0" text="100">
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="205.0" prefHeight="35.0" prefWidth="48.0" text="Price">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="213.0" prefHeight="27.0" prefWidth="112.0" text="Selling Price">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Text fx:id="amount1" layoutX="311.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="56.53668212890625" />
+      <Text fx:id="amount2" layoutX="311.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="56.53668212890625" />
+      <Text fx:id="amount3" layoutX="311.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="56.53668212890625" />
+      <Text fx:id="amount4" layoutX="311.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="68.5367431640625" />
+      <Text fx:id="amount5" layoutX="311.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="56.53668212890625" />
+      <Label layoutX="294.0" layoutY="184.0" prefHeight="59.0" prefWidth="78.0" text="Number Owned" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spinner1" layoutX="181.0" layoutY="250.0" prefHeight="25.0" prefWidth="57.0" />
+      <Spinner fx:id="spinner2" layoutX="181.0" layoutY="294.0" prefHeight="25.0" prefWidth="57.0" />
+      <Spinner fx:id="spinner3" layoutX="181.0" layoutY="342.0" prefHeight="25.0" prefWidth="57.0" />
+      <Spinner fx:id="spinner4" layoutX="181.0" layoutY="385.0" prefHeight="25.0" prefWidth="57.0" />
+      <Spinner fx:id="spinner5" layoutX="181.0" layoutY="431.0" prefHeight="25.0" prefWidth="57.0" />
+      <Text fx:id="marketItem1" layoutX="34.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="68.5367431640625" />
+      <Label fx:id="notEnough" layoutX="43.0" layoutY="454.0" prefHeight="27.0" prefWidth="215.0" text="Not enough gold！" textFill="#801111" visible="false" />
+      <Label fx:id="tooMuch" layoutX="45.0" layoutY="459.0" prefHeight="17.0" prefWidth="436.0" text="Label" textFill="#dd1515" visible="false" />
+      <Label layoutX="417.0" prefHeight="59.0" prefWidth="69.0" text="Cargo">
+         <font>
+            <Font name="Bauhaus 93" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="cargo" layoutX="431.0" layoutY="75.0" prefHeight="35.0" prefWidth="41.0" text="100">
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="30.0" prefHeight="59.0" prefWidth="57.0" text="Cap.">
+         <font>
+            <Font name="Bauhaus 93" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="notEnoughCargo" layoutX="43.0" layoutY="454.0" prefHeight="27.0" prefWidth="215.0" text="Not enough cargo space！" textFill="#801111" visible="false" />
+      <Text fx:id="marketItem6" layoutX="28.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="179.5367431640625" />
+      <Text fx:id="buyPrice6" layoutX="219.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.5367431640625" />
+      <Button fx:id="winBtn" layoutX="368.0" layoutY="463.0" mnemonicParsing="false" onAction="#toWinScreen" prefHeight="27.0" prefWidth="126.0" text="Buy" />
+   </children>
+</AnchorPane>

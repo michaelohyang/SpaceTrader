@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PoliceController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="566.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/policeSpaceship.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="policeLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="24.0" prefHeight="51.0" prefWidth="565.0" text="The Galactic Police thinks you've stolen some items !!" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="56.0" layoutY="298.0" mnemonicParsing="false" onAction="#flee" text="Flee" />
+      <Button layoutX="260.0" layoutY="298.0" mnemonicParsing="false" onAction="#fight" text="Fight" />
+      <Button layoutX="432.0" layoutY="298.0" mnemonicParsing="false" onAction="#forfeit" text="Forfeit Items" />
+      <AnchorPane fx:id="fleePane" prefHeight="400.0" prefWidth="565.0" visible="false">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="566.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../pictures/policeFlee.jpeg" />
+               </image>
+            </ImageView>
+            <Button layoutX="249.0" layoutY="339.0" mnemonicParsing="false" onAction="#close" text="Continue" />
+            <Text fx:id="fleeWin" fill="WHITE" layoutX="155.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Fleed  !!" textAlignment="CENTER" visible="false" wrappingWidth="256.22900390625">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="fleeLoss" fill="WHITE" layoutX="155.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Didn't Flee" textAlignment="CENTER" visible="false" wrappingWidth="256.22900390625">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="fightPane" prefHeight="400.0" prefWidth="565.0" visible="false">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="566.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../pictures/policeFight.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="259.0" layoutY="349.0" mnemonicParsing="false" onAction="#close" text="Continue" />
+            <Text fx:id="fightWin" fill="WHITE" layoutX="165.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Won  !!" textAlignment="CENTER" visible="false" wrappingWidth="256.22900390625">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="fightLoss" fill="WHITE" layoutX="165.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Lost" textAlignment="CENTER" visible="false" wrappingWidth="256.22900390625">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="forfeitPane" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="566.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../pictures/policeForfeit.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="249.0" layoutY="343.0" mnemonicParsing="false" onAction="#close" text="Continue" />
+            <Text fx:id="forfeit" layoutX="224.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Forfeited">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

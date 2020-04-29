@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="418.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BanditController">
+   <children>
+      <Text layoutX="23.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have encountered a bandit!!" wrappingWidth="513.13671875">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <ButtonBar layoutX="146.0" layoutY="321.0" prefHeight="40.0" prefWidth="377.0">
+        <buttons>
+            <Button fx:id="flee" mnemonicParsing="false" onAction="#flee" text="Flee" />
+            <Button fx:id="fight" mnemonicParsing="false" onAction="#fight" text="Fight" />
+          <Button fx:id="pay" minWidth="25.0" mnemonicParsing="false" onAction="#pay" prefHeight="27.0" prefWidth="150.0" text="Pay" />
+        </buttons>
+      </ButtonBar>
+      <ImageView fitHeight="256.0" fitWidth="262.0" layoutX="404.0" layoutY="71.0">
+         <image>
+            <Image url="@../pictures/bandit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="433.0" layoutX="63.0" layoutY="75.0">
+         <image>
+            <Image url="@../pictures/text.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="payAmount" layoutX="441.0" layoutY="361.0" prefHeight="19.0" prefWidth="72.0" text="-$100">
+         <font>
+            <Font name="Courier New" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="demand" layoutX="154.0" layoutY="142.0" prefHeight="17.0" prefWidth="228.0" text="demand">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Book" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="186.0" layoutY="113.0" prefHeight="17.0" prefWidth="228.0" text="Yo dude, you look pretty rich,">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Book" size="17.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="background" layoutY="2.0" prefHeight="418.0" prefWidth="689.0">
+         <children>
+            <ImageView fitHeight="434.0" fitWidth="702.0" layoutY="-2.0">
+               <image>
+                  <Image url="@../pictures/BanditApproaching.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="284.0" layoutY="330.0" mnemonicParsing="false" onAction="#toBandit" prefHeight="40.0" prefWidth="122.0" text="Confirm" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="credit" layoutX="477.0" layoutY="51.0" prefHeight="40.0" prefWidth="207.0" text="Credit:" textFill="#a42525" visible="false">
+         <font>
+            <Font name="Apple Color Emoji" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="showShipdestory" prefHeight="420.0" prefWidth="689.0" visible="false">
+         <children>
+            <ImageView fitHeight="420.0" fitWidth="700.0" layoutX="-6.0">
+               <image>
+                  <Image url="@../pictures/destroyed.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="42.0" layoutY="72.0" prefHeight="94.0" prefWidth="649.0" text="Your Ship Has Been Destroyed ！" textFill="#eb1d1d">
+               <font>
+                  <Font name="Bauhaus 93" size="45.0" />
+               </font>
+            </Label>
+            <Button layoutX="316.0" layoutY="319.0" mnemonicParsing="false" onAction="#close" text="Confirm" />
+            <Label layoutX="129.0" layoutY="210.0" prefHeight="71.0" prefWidth="548.0" text="......Well, You‘ve Got Another One" textFill="#ab1919">
+               <font>
+                  <Font name="Bauhaus 93" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="fleeSuccessful" prefHeight="420.0" prefWidth="694.0" visible="false">
+         <children>
+            <ImageView fitHeight="420.0" fitWidth="694.0">
+               <image>
+                  <Image url="@../pictures/successfulFlee.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="305.0" layoutY="323.0" mnemonicParsing="false" onAction="#close" prefHeight="40.0" prefWidth="72.0" text="Confirm" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="fleeDamaged" prefHeight="434.0" prefWidth="696.0" visible="false">
+         <children>
+            <ImageView fitHeight="434.0" fitWidth="712.0" layoutX="-10.0">
+               <image>
+                  <Image url="@../pictures/damagedFlee.PNG" />
+               </image>
+            </ImageView>
+            <Label fx:id="fleeLabe" layoutX="38.0" layoutY="115.0" text="You’ve Flee but Your Ship Has Been Damaged" textFill="#cd1212">
+               <font>
+                  <Font name="Bauhaus 93" size="32.0" />
+               </font>
+            </Label>
+            <Button layoutX="317.0" layoutY="347.0" mnemonicParsing="false" onAction="#close" text="Confirm" />
+            <Label fx:id="dmg" layoutX="283.0" layoutY="313.0" text="Label" textFill="#fffb00">
+               <font>
+                  <Font name="Bauhaus 93" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="dmgLabel" layoutX="38.0" layoutY="115.0" text="You’ve Lost and Your Ship Has Been Damaged" textFill="#cd1212" visible="false">
+               <font>
+                  <Font name="Bauhaus 93" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="showWin" prefHeight="427.0" prefWidth="696.0" visible="false">
+         <children>
+            <ImageView fitHeight="434.0" fitWidth="700.0">
+               <image>
+                  <Image url="@../pictures/trophy.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="179.0" layoutY="70.0" prefHeight="45.0" prefWidth="389.0" text="You WIn, Warrior ！" textFill="#b52525">
+               <font>
+                  <Font name="Bauhaus 93" size="41.0" />
+               </font>
+            </Label>
+            <Button layoutX="324.0" layoutY="318.0" mnemonicParsing="false" onAction="#close" text="Confirm" />
+            <Label fx:id="crd" layoutX="249.0" layoutY="368.0" prefHeight="45.0" prefWidth="389.0" text="You WIn, Warrior ！" textFill="#acc929">
+               <font>
+                  <Font name="Bauhaus 93" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="lostGold" prefHeight="434.0" prefWidth="700.0" visible="false">
+         <children>
+            <ImageView fitHeight="434.0" fitWidth="702.0">
+               <image>
+                  <Image url="@../pictures/purchaseBackground.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="lostAmount" layoutX="93.0" layoutY="38.0" prefHeight="71.0" prefWidth="548.0" text="you paid how much to the Bandit" textFill="#97b51f">
+               <font>
+                  <Font name="Bauhaus 93" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="297.0" fitWidth="298.0" layoutX="404.0" layoutY="83.0">
+               <image>
+                  <Image url="@../pictures/bandit.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="134.0" fitWidth="309.0" layoutX="170.0" layoutY="120.0">
+               <image>
+                  <Image url="@../pictures/text.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="240.0" layoutY="170.0" prefHeight="34.0" prefWidth="157.0" text="Haha, Thanks Dude">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="315.0" layoutY="342.0" mnemonicParsing="false" onAction="#close" text="Confirm" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="lostCargo" prefHeight="200.0" prefWidth="702.0" visible="false">
+         <children>
+            <ImageView fitHeight="434.0" fitWidth="702.0">
+               <image>
+                  <Image url="@../pictures/purchaseBackground.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="325.0" layoutY="332.0" mnemonicParsing="false" onAction="#close" text="Confirm" />
+            <Label layoutX="70.0" layoutY="78.0" prefHeight="48.0" prefWidth="596.0" text="You've Lost All Your Cargos ！" textFill="#dacc36">
+               <font>
+                  <Font name="Bauhaus 93" size="42.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="331.0" fitWidth="309.0" layoutX="386.0" layoutY="91.0">
+               <image>
+                  <Image url="@../pictures/bandit.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="145.0" fitWidth="326.0" layoutX="148.0" layoutY="159.0">
+               <image>
+                  <Image url="@../pictures/text.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="241.0" layoutY="204.0" text="Sorry, dude...LOL">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

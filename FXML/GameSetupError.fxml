@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="387.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SkillConfigurationController">
+   <children>
+      <ImageView fitHeight="460.0" fitWidth="643.0">
+         <image>
+            <Image url="@../pictures/Error.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="bt2" layoutX="301.0" layoutY="348.0" mnemonicParsing="false" onAction="#returnToConfig" prefHeight="36.0" prefWidth="61.0" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
