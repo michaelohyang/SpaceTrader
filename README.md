@@ -1,0 +1,3 @@
+# SpaceTrader
+
+**Purpose**
