@@ -1,0 +1,3 @@
+Controller files here controls the function and FXML in the game
+- To check which controller controls which FXML, open up the FXML you want 
+  to manipulate and look for the controller source in the code
