@@ -23,8 +23,8 @@ You are a SpaceTrader that travels around the universe to trade items with merch
 
 
 **Credits**
--*Michael Oh-Yang
--*Josh Jiaxun Chen
--*Mohamed Jelloul
--*Cullen Bertram 
--*Amber Pelham
+- *Michael Oh-Yang
+- *Josh Jiaxun Chen
+- *Mohamed Jelloul
+- *Cullen Bertram 
+- *Amber Pelham
